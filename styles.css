@@ -1,0 +1,171 @@
+.body{
+    background-color: rgb(53, 47, 47);
+}
+
+.nav-bar {
+    margin-left: 220px;
+    margin-top: -20px;
+    display: flex;
+
+
+}
+
+.nav-img {
+    /* margin-top: 25px; */
+    margin-left: 100px;
+}
+.img2{
+    margin-left: 20px;
+}
+
+.nav-bar img {
+
+    height: 30px;
+    width: 30px;
+    margin-top: 25px;
+}
+
+h4 {
+    margin-right: 80px;
+    font-size: larger;
+    font-weight: 550;
+}
+
+.text-container {
+    box-shadow: 0 0 10px black;
+    width: 400px;
+    padding-right: 200px;
+    position: absolute;
+    color: white;
+    left: 5rem;
+    top: 15rem;
+    background-color: rgba(168, 107, 107, 0.8);
+    padding: 2rem;
+}
+
+.full-screen-image{
+    background-color:rgba(179, 92, 92, 0.8); 
+    height: 720px;
+}
+
+.item-card-div{
+    
+    text-align: center;
+    background-color:rgba(179, 92, 92, 0.8); 
+    height: 720px;
+}
+
+.item-card-div h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.full-screen-image img {
+  
+    top: 90px;
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+    object-position: -50% 25%;
+}
+
+.items {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 130px; 
+    padding: 0 130px 0 130px;
+    
+
+}
+
+.items > div{
+    box-shadow: 0 0 10px black;
+    border-radius: 0 40px 0 40px;
+    text-align: center;
+    height: 380px;
+    background-color: white;
+}
+
+.item img {
+    border-radius: 0 60px 0 0;
+    padding: 30px 0 0 0;
+    width: 80%;
+    height: 200px; 
+    
+    
+}
+
+
+.item p {
+    margin: 0;
+    padding: 10px;
+}
+
+.order-btn{
+    margin-top: 60px;
+    padding: 20px 50px 20px 50px;
+    border-radius: 40px;
+    border: transparent;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgb(192, 170, 170);
+
+}
+
+
+/* @media (min-width: 769px) and (max-width: 1024px) {
+    .nav-bar {
+        flex-direction: row;
+        align-items: center;
+        position: static;
+    }
+
+    .nav-img, .img2 {
+        display: inline;
+        margin-left: 20px;
+    }
+
+   
+} */
+
+@media (max-width: 768px) {
+    .nav-bar {
+        padding:10px;
+        margin-left: -15px;
+        /* margin-top: 10px; */
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav-img, .img2 {
+        display: none;
+    }
+    .full-screen-image img{
+       background-image:url("F:\assignment-simplotel\assets\img1.jpg") ;
+    }
+    .text-container{
+        margin-top: 40px;
+        width: 45%;
+    }
+
+    h4 {
+        display: block;
+        font-size: larger;
+        font-weight: 550;
+        margin: 10px 0;
+    }
+
+    .items {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    .items > div {
+        height: auto;
+    }
+}
